@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-family: cursive;
+    color: #555;
+    text-align: center;
+    padding: 20px 0;
+}
+.calculate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 10px;
+    border: 2px solid salmon;
+    border-radius: 100px;
+    font-size: 1.3rem;
+    font-family: cursive;
+    margin: 10px 0;
+    color: #555;
+}
+a:hover{
+    background-color: pink;
+}

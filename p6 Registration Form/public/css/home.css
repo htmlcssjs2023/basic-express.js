@@ -1,0 +1,20 @@
+p{
+    font-size: 1.4rem;
+    padding: 15px;
+    font-family: cursive;
+}
+a{
+    display: inline-block;
+    padding: 7px 20px;
+    text-decoration: none;
+    font-family: cursive;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: 2px solid salmon;
+    border-radius: 100px;
+    color: salmon;
+}
+a:hover{
+    background-color: pink;
+    color: blueviolet;
+}

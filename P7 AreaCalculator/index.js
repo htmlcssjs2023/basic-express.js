@@ -6,16 +6,18 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false}));
 app.use(bodyParser.json());
 
+app.use(express.static("public"));
+
 app.get('/', (req,res)=>{
     res.statusCode = 200;
-    res.sendFile(__dirname + "/views/index.html");
+    res.sendFile(__dirname + "/public/views/index.html");
 });
 
 app.get('/circle', (req,res)=>{
-    res.sendFile(__dirname + "/views/circle.html");
+    res.sendFile(__dirname + "/public/views/circle.html");
 })
 app.get('/triangle', (req,res)=>{
-    res.sendFile(__dirname + "/views/triangle.html");
+    res.sendFile(__dirname + "/public/views/triangle.html");
 })
 app.post('/triangle', (req, res)=>{
     const base = req.body.base;
